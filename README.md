@@ -4,7 +4,39 @@
 ## 资料
 普林斯顿大学的公开课: [Bitcoin and Cryptocurrency Technologies](https://www.coursera.org/learn/cryptocurrency/home/welcome)，这个公开课很适合入门。
 
-Github项目:[区块链 - 中文资源](https://github.com/LiuBoyu/blockchain)  里面的资料很详尽了，这个仓库之后会补充阅读白皮书的一些心得体会
+Github项目:[区块链 - 中文资源](https://github.com/LiuBoyu/blockchain)  里面的资料很详尽
+
+上述两个资料作为入门已经足够了。
+
+这个仓库主要记录我在学习区块链项目过程中的体会和心得。 希望通过对于区块链技术、项目的学习，能够帮助自己理解这个新事物
+
+
+
 
 ### 以太坊 ethereum
-相比于比特币，主要改进的地方在于MPT（Merkle Patricia Tree）树。
+以太坊是一个开源的有智能合约功能的公共区块链平台，它允许任何人在平台中建立和使用通过区块链技术运行的去中心化应用。
+
+以太坊狭义上是指一系列定义去中心化应用平台的协议，它的核心是以太坊虚拟机（“EVM”），可以执行任意复杂算法的编码。
+
+关于以太坊平台的详细介绍，可见参考文献
+
+参考文献：
+- [深入浅出以太坊](http://www.gxn.io/files/book/shenruqianchuyitaifang.pdf)
+- [维基百科](https://zh.wikipedia.org/wiki/%E4%BB%A5%E5%A4%AA%E5%9D%8A)
+
+
+##### [RLP](https://github.com/ethereum/wiki/wiki/%5B%E4%B8%AD%E6%96%87%5D-RLP)
+递归长度前缀编码（RLP）是Ethereum中对象序列化的一个主要编码方式，起到穿针引线的作用，其目的是对任意嵌套的二进制数据的序列进行编码，这种编码格式将任意长度和纬度的字符串构成的数组串连接拼成字符串。
+
+
+##### [MPT (Merkle Patricia Tree)](https://github.com/ethereum/wiki/wiki/Patricia-Tree)
+MPT是以太坊中的一种加密认证的数据结构，可以用来存储所有的(key，value)对。
+
+相比于传统的trie只有一种节点，以太坊增加了两个新的节点，称为叶节点和扩展节点；原来的节点称为分支节点。
+
+MPT树能有效减少Trie树的深度，增加Trie树的平衡性。而且通过节点的hash值进行树的节点的链接，有助于提高树的安全性和可验证性。
+
+参考文献：
+
+- http://www.cnblogs.com/fengzhiwu/p/5584809.html
+- http://www.cnblogs.com/fengzhiwu/p/5524324.html
