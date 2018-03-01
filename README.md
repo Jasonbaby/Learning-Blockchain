@@ -17,7 +17,9 @@
 
 部分网址需要翻墙才能访问
 
-接下来的内容，是我在学习区块链过程中接触到的项目、概念和技术。按照时间顺序罗列。看上去可能会有些混乱，不过不用担心，每当内容多到一定程度，我都会认真整理一次的，力求简洁明了。
+接下来的内容，是我在学习区块链过程中接触到的项目、概念和技术，主要会记录它们独特的地方。
+
+内容按照时间顺序罗列，所以看上去可能会有些混乱。不过不用担心，每当内容多到一定程度，我都会认真整理一次的，力求简洁明了。
 
 ---
 
@@ -29,25 +31,25 @@
 
 侧链简介：[区块链中一个重要的链：侧链](https://steemit.com/cn/@monkeyplayfire/62v4en)
 
-### 相关技术
+
+### 相关项目及技术
 #### 多重签名 Multi-sig
 多重签名技术侧链的基础，理解多重签名有利于理解侧链。
 [密钥分存](https://en.wikipedia.org/wiki/Secret_sharing)是多重签名的技术基础。
 [Bitcoin and Cryptocurrency Technologies](https://www.coursera.org/learn/cryptocurrency/home/welcome)第四周的课程中有相关介绍。
 
-
-### 相关项目
 #### [Blockstream](https://blockstream.com/technology/)
 BlockStream公司由比特币核心开发团队成立。该公司提出侧链协议，即把比特币转出比特币区块链、另行开发二代区块链，一来保证比特币区块链的安全，二来应对二代币的冲击，针对不同应用场景实现商业化。
 - ##### 楔入式侧链(Pegged Sidechains)
-    楔入式侧链的技术基础称作双向楔入，流程如下：
+    [Pegged Sidechains 白皮书(英文)](https://blockstream.com/technology/sidechains.pdf)
+    [Pegged Sidechains 白皮书(翻译版)](http://www.8btc.com/enabling-blockchain-innovations-with-pegged-sidechains-abstract-introduction)
+    楔入式侧链的技术基础称作双向楔入，流程如下(具体可见白皮书第2、3节)：
     ![双向楔入](https://steemitimages.com/0x0/http://upload-images.jianshu.io/upload_images/1698588-632a3bbe1874c5d0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 - ##### 闪电网络(Lightning Network)
 
 
-[Pegged Sidechains 白皮书(英文)](https://blockstream.com/technology/sidechains.pdf)
-[Pegged Sidechains 白皮书(翻译版)](http://www.8btc.com/enabling-blockchain-innovations-with-pegged-sidechains-abstract-introduction)
+
 #### [Rootstock](https://www.rsk.co/)
 #### [BTC Relay](http://btcrelay.org/)
 
