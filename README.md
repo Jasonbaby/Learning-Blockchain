@@ -6,33 +6,51 @@
 - 记录我在学习区块链项目过程中的体会和心得
 - 分享
 
-希望通过对区块链技术、项目的学习，帮助自己理解这个新事物
+希望通过对区块链技术、项目的学习，帮助自己理解这个新事物，理解区块链的逻辑
 
 ## 资料
 普林斯顿大学的公开课: [Bitcoin and Cryptocurrency Technologies](https://www.coursera.org/learn/cryptocurrency/home/welcome)，这个公开课很适合入门。
 
 [区块链 - 中文资源](https://github.com/LiuBoyu/blockchain)  里面收集了很多文章、资料
 
-上述两个资料作为入门已经足够了。同时，上述两个资料所包含的内容，也是我之后所记录的内容的基础。部分网址需要翻墙才能访问
+上述两个资料作为入门已经足够了。同时，上述两个资料所包含的内容，也是我之后所记录的内容的基础。
+
+部分网址需要翻墙才能访问
 
 接下来的内容，是我在学习区块链过程中接触到的项目、概念和技术。按照时间顺序罗列。看上去可能会有些混乱，不过不用担心，每当内容多到一定程度，我都会认真整理一次的，力求简洁明了。
 
 ---
 
-## 跨链技术
-楔入式侧链技术（ pegged sidechains），它将实现比特币和其他数字资产在多个区块链间的转移，这就意味着用户们在使用他们已有资产的情况下，就可以访问新的加密货币系统。目前，侧链技术主要是由Blockstream公司负责开发。
+## 跨链技术(侧链)
+侧链(sidechains)是以锚定现有数字货币为基础的新型区块链，以融合的方式实现加密货币金融生态的目标。侧链可实现现有数字货币和其他帐簿资产在多个区块链间的转移。
+这使用户能用他们已有的资产来使用新的加密货币系统。
 
+此外，由于侧链是从父链中转移现有资产而不是另铸新资产，侧链不会引起未经授权的铸币，维护资产的安全和稀缺性依靠父链来实现。从而可避免出现与新货币相关的流动性短缺和市场波动。
 
-### 相关项目
-#### [Blockstream](https://blockstream.com/technology/)
-#### [Rootstock](https://www.rsk.co/)
-#### [BTC Relay](http://btcrelay.org/)
+侧链简介：[区块链中一个重要的链：侧链](https://steemit.com/cn/@monkeyplayfire/62v4en)
 
 ### 相关技术
 #### 多重签名 Multi-sig
 多重签名技术侧链的基础，理解多重签名有利于理解侧链。
 [密钥分存](https://en.wikipedia.org/wiki/Secret_sharing)是多重签名的技术基础。
-[Bitcoin and Cryptocurrency Technologies](https://www.coursera.org/learn/cryptocurrency/home/welcome)第四周的课程中有介绍。
+[Bitcoin and Cryptocurrency Technologies](https://www.coursera.org/learn/cryptocurrency/home/welcome)第四周的课程中有相关介绍。
+
+
+### 相关项目
+#### [Blockstream](https://blockstream.com/technology/)
+BlockStream公司由比特币核心开发团队成立。该公司提出侧链协议，即把比特币转出比特币区块链、另行开发二代区块链，一来保证比特币区块链的安全，二来应对二代币的冲击，针对不同应用场景实现商业化。
+- ##### 楔入式侧链(Pegged Sidechains)
+    楔入式侧链的技术基础称作双向楔入，流程如下：
+    ![双向楔入](https://steemitimages.com/0x0/http://upload-images.jianshu.io/upload_images/1698588-632a3bbe1874c5d0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+- ##### 闪电网络(Lightning Network)
+
+
+[Pegged Sidechains 白皮书(英文)](https://blockstream.com/technology/sidechains.pdf)
+[Pegged Sidechains 白皮书(翻译版)](http://www.8btc.com/enabling-blockchain-innovations-with-pegged-sidechains-abstract-introduction)
+#### [Rootstock](https://www.rsk.co/)
+#### [BTC Relay](http://btcrelay.org/)
+
 
 
 
