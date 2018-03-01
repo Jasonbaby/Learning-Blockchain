@@ -21,13 +21,26 @@
 
 ## 跨链技术
 楔入式侧链技术（ pegged sidechains），它将实现比特币和其他数字资产在多个区块链间的转移，这就意味着用户们在使用他们已有资产的情况下，就可以访问新的加密货币系统。目前，侧链技术主要是由Blockstream公司负责开发。
+
+
 ### 相关项目
-[Blockstream](https://blockstream.com/technology/)
-[Rootstock](https://www.rsk.co/)
-[BTC Relay](http://btcrelay.org/)
+#### [Blockstream](https://blockstream.com/technology/)
+#### [Rootstock](https://www.rsk.co/)
+#### [BTC Relay](http://btcrelay.org/)
 
 ### 相关技术
 #### 多重签名 Multi-sig
+多重签名技术侧链的基础，理解多重签名有利于理解侧链。
+[密钥分存](https://en.wikipedia.org/wiki/Secret_sharing)是多重签名的技术基础。
+[Bitcoin and Cryptocurrency Technologies](https://www.coursera.org/learn/cryptocurrency/home/welcome)第四周的课程中有介绍。
+
+
+
+
+
+参考资料：
+- [巴比特侧链专辑](http://8btc.com/topic-sidechain.html)
+
 
 ---
 
@@ -70,4 +83,6 @@ MPT树能有效减少Trie树的深度，增加Trie树的平衡性。而且通过
 
 ## 瑞波 Ripple
 [瑞波共识机制白皮书](https://ripple.com/files/ripple_consensus_whitepaper.pdf)
+
 [瑞波 Github](https://github.com/ripple/rippled)
+
