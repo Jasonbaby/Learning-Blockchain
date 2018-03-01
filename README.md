@@ -42,15 +42,21 @@
 BlockStream公司由比特币核心开发团队成立。该公司提出侧链协议，即把比特币转出比特币区块链、另行开发二代区块链，一来保证比特币区块链的安全，二来应对二代币的冲击，针对不同应用场景实现商业化。
 - ##### 楔入式侧链(Pegged Sidechains)
     [Pegged Sidechains 白皮书(英文)](https://blockstream.com/technology/sidechains.pdf)
+
     [Pegged Sidechains 白皮书(翻译版)](http://www.8btc.com/enabling-blockchain-innovations-with-pegged-sidechains-abstract-introduction)
+
     楔入式侧链的技术基础称作双向楔入，流程如下(具体可见白皮书第2、3节)：
+    
     ![双向楔入](https://steemitimages.com/0x0/http://upload-images.jianshu.io/upload_images/1698588-632a3bbe1874c5d0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 - ##### 闪电网络(Lightning Network)
-
-
+    闪电网络是由BlockStream公司提出的一个支持高容量、及时交易的小额支付系统。闪电网络在链下实现点对点微支付，原先比特币处理能力的瓶颈被彻底打破，时延、最终性、容量甚至隐私问题也迎刃而解。
+    详情可见：
+    - [详解闪电网络](http://www.8btc.com/ln-rn-corda)
+    - [The Bitcoin Lightning Network:Scalable Off-Chain Instant Payments](http://lightning.network/lightning-network-paper.pdf)
 
 #### [Rootstock](https://www.rsk.co/)
+
 #### [BTC Relay](http://btcrelay.org/)
 
 
