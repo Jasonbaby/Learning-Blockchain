@@ -9,15 +9,22 @@
 希望通过对区块链技术、项目的学习，帮助自己理解这个新事物，理解区块链的逻辑
 
 ## 资料
-普林斯顿大学的公开课: [Bitcoin and Cryptocurrency Technologies](https://www.coursera.org/learn/cryptocurrency/home/welcome)，这个公开课很适合入门。
+### 基础资料
+- 普林斯顿大学的公开课: [Bitcoin and Cryptocurrency Technologies](https://www.coursera.org/learn/cryptocurrency/home/welcome)
+    这个公开课很适合入门，讲了很多理解区块链所需要的基础知识，讲得也很清楚，节奏很好。 可以1.5倍速过一遍
 
-[区块链 - 中文资源](https://github.com/LiuBoyu/blockchain)  里面收集了很多文章、资料
+- [区块链 - 中文资源](https://github.com/LiuBoyu/blockchain)  
+    里面收集了很多文章、资料。翻一翻它的资源，对区块链的主要技术、发展脉络、主要项目能有一个大概的了解
 
-上述两个资料作为入门已经足够了。同时，上述两个资料所包含的内容，也是我之后所记录的内容的基础。
+上述两个资料作为入门已经足够了。同时，上述两个资料所包含的内容，也是我之后所记录的内容的基础。**部分网址需要翻墙才能访问**
 
-部分网址需要翻墙才能访问
+### 相关社区
+- [巴比特](http://www.8btc.com/)
+- [Ethfans](http://ethfans.org/)
 
-接下来的内容，是我在学习区块链过程中接触到的项目、概念和技术，主要会记录它们独特的地方。
+
+
+接下来的内容，是我在学习区块链过程中接触到的项目、概念和技术，主要会记录它们**独特**的地方。
 
 内容按照时间顺序罗列，所以看上去可能会有些混乱。不过不用担心，每当内容多到一定程度，我都会认真整理一次的，力求简洁明了。
 
@@ -31,6 +38,8 @@
 
 侧链简介：[区块链中一个重要的链：侧链](https://steemit.com/cn/@monkeyplayfire/62v4en)
 
+参考资料:
+- [根链平台(RootStock)——基于比特币驱动的智能合约白皮书(中文翻译)](http://www.8btc.com/tan90d84)
 
 ### 相关项目及技术
 #### 多重签名 Multi-sig
@@ -50,27 +59,34 @@ BlockStream公司由比特币核心开发团队成立。该公司提出侧链协
     ![双向楔入](https://steemitimages.com/0x0/http://upload-images.jianshu.io/upload_images/1698588-632a3bbe1874c5d0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 - ##### 闪电网络(Lightning Network)
-    闪电网络是由BlockStream公司提出的一个支持高容量、及时交易的小额支付系统。闪电网络在链下实现点对点微支付，原先比特币处理能力的瓶颈被彻底打破，时延、最终性、容量甚至隐私问题也迎刃而解。
+    闪电网络是由BlockStream公司提出的一个支持高容量、及时交易的小额支付系统。闪电网络在链下实现点对点微支付，原先比特币处理能力的瓶颈被彻底打破，时延、最终性、容量甚至隐私问题也迎刃而解。它是基于微支付通道演进而来，创造性的设计出了两种类型的交易合约：序列到期可撤销合约RSMC（Revocable Sequence Maturity Contract，哈希时间锁定合约HTLC（Hashed Timelock Contract）。
     详情可见：
     - [详解闪电网络](http://www.8btc.com/ln-rn-corda)
     - [The Bitcoin Lightning Network:Scalable Off-Chain Instant Payments](http://lightning.network/lightning-network-paper.pdf)
 
 #### [Rootstock](https://www.rsk.co/)
+RootStock是一个建立在比特币区块链上的智能合约分布式平台。它是第一个和比特币实现双向挂钩的开源的智能合约平台。RSK没有发行任何代币，它通过和比特币联合挖矿，吸引矿工加入，**矿工挖矿的收入是手续费**。 RSK实现了以太坊虚拟机的一个改进版本，它将作为比特币的一个侧链。它的目标是，将复杂的智能合约实施为一个侧链，为核心比特币网络增加价值和功能。可以把RSK理解为在比特币侧链上实现的升级版以太坊。
 
-    RootStock是一个建立在比特币区块链上的智能合约分布式平台。它是第一个和比特币实现双向挂钩的开源的智能合约平台。
-    RSK没有发行任何代币，它通过和比特币联合挖矿，吸引矿工加入。 
-    它的目标是，将复杂的智能合约实施为一个侧链，为核心比特币网络增加价值和功能。
-    RSK实现了以太坊虚拟机的一个改进版本，它将作为比特币的一个侧链。可以把RSK理解为在比特币侧链上实现的升级版以太坊。
-    
+联合挖矿是一种允许比特币矿工同时挖其他加密货币的技术，并且边际成本接近零。根链的挖矿设备和使用方法和挖比特币是一样的，这就可以让比特币矿工在挖比特币的同时挖根链。
+
+
+
+- ##### 动态联合挖矿/联邦(Dynamic Hybrid Merged mining/Federation)
+    根链使用DECOR+区块奖励共享方案，以减少竞争，并且允许矿工延时切换到根链的最佳区块。如果矿工在切换矿机算力时一个根链区块被挖到了，他们将获得一个完整的根链区块奖励。如果他们延迟了切换，并且还在旧区块链头部挖矿，他们就相当于创建了一个叔叔(uncles)块。为了防止51%攻击，根链的矿工使用工作量证明挖矿会包含一个联邦检查点（federated checkpoints）。联邦检查点由注册过的联邦成员和客户组成，共同签名以决定最佳的区块链状态。
+
+我理解的根链存在的逻辑是这样的：随着比特币区块奖励的减少，未来矿工的收入主要来自于交易的手续费。但是比特币交易速度太慢，最大为每秒七笔。若矿工为了维持收入，那么平均比特币交易的手续费将会激增。 减少平均每笔交易的手续费的方法，就是提高交易的数量。根链用侧链的方法，提高了交易速率。并且用联合挖矿的方法，保证了矿工参与的积极性。
+
+
+
 #### [BTC Relay](http://btcrelay.org/)
+BTC Relay由ConsenSys团队推出，其主要原理是BTC Relay把以太坊网络与比特币网络以一种安全去中心化的方式连接起来。BTC Relay通过使用以太坊的智能合约功能可以允许用户在以太坊区块链上验证比特币交易。
+
+不过从这个项目的[github](https://github.com/ethereum/btcrelay)更新状况来看，应该是已经凉了！
+
+参考资料:
+- [BTC-Relay与RootStock侧链技术对比](https://bytom.io/?p=15)
 
 
-
-
-
-
-参考资料：
-- [巴比特侧链专辑](http://8btc.com/topic-sidechain.html)
 
 
 ---
@@ -83,7 +99,7 @@ BlockStream公司由比特币核心开发团队成立。该公司提出侧链协
 
 关于以太坊平台的详细介绍，可见参考文献：
 - [项目源码 github](https://github.com/ethereum/go-ethereum)
-- [以太坊官网文档中文版](http://book.8btc.com/books/6/ethereum/_book/)
+- [Ethfans.org中文文档](http://ethfans.org/wikis/Home)
 - [维基百科](https://zh.wikipedia.org/wiki/%E4%BB%A5%E5%A4%AA%E5%9D%8A)
 - [深入浅出以太坊](http://www.gxn.io/files/book/shenruqianchuyitaifang.pdf)
 ### 技术特点
