@@ -56,7 +56,11 @@ BlockStream公司由比特币核心开发团队成立。该公司提出侧链协
     - [The Bitcoin Lightning Network:Scalable Off-Chain Instant Payments](http://lightning.network/lightning-network-paper.pdf)
 
 #### [Rootstock](https://www.rsk.co/)
-    RootStock是一个建立在比特币区块链上的智能合约分布式平台。它是第一个和比特币实现双向挂钩的开源的智能合约平台。RSK没有发行任何代币，它通过和比特币联合挖矿，吸引矿工加入。 它的目标是，将复杂的智能合约实施为一个侧链，为核心比特币网络增加价值和功能。RSK实现了以太坊虚拟机的一个改进版本，它将作为比特币的一个侧链。可以把RSK理解为在比特币侧链上实现的升级版以太坊。
+
+    RootStock是一个建立在比特币区块链上的智能合约分布式平台。它是第一个和比特币实现双向挂钩的开源的智能合约平台。
+    RSK没有发行任何代币，它通过和比特币联合挖矿，吸引矿工加入。 
+    它的目标是，将复杂的智能合约实施为一个侧链，为核心比特币网络增加价值和功能。
+    RSK实现了以太坊虚拟机的一个改进版本，它将作为比特币的一个侧链。可以把RSK理解为在比特币侧链上实现的升级版以太坊。
     
 #### [BTC Relay](http://btcrelay.org/)
 
