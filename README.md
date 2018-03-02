@@ -11,6 +11,7 @@
 ## 资料
 ### 基础资料
 - 普林斯顿大学的公开课: [Bitcoin and Cryptocurrency Technologies](https://www.coursera.org/learn/cryptocurrency/home/welcome)
+
     这个公开课很适合入门，讲了很多理解区块链所需要的基础知识，讲得也很清楚，节奏很好。 可以1.5倍速过一遍
 
 - [区块链 - 中文资源](https://github.com/LiuBoyu/blockchain)  
