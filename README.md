@@ -89,14 +89,13 @@ BTC Relay由ConsenSys团队推出，其主要原理是BTC Relay把以太坊网�
 - [BTC-Relay与RootStock侧链技术对比](https://bytom.io/?p=15)
 
 
-
-
 ---
+
+
 
 
 ## 以太坊 Ethereum
 以太坊是一个开源的有智能合约功能的公共区块链平台，它允许任何人在平台中建立和使用通过区块链技术运行的去中心化应用。
-
 以太坊狭义上是指一系列定义去中心化应用平台的协议，它的核心是以太坊虚拟机（“EVM”），可以执行任意复杂算法的编码。
 
 关于以太坊平台的详细介绍，可见参考文献：
@@ -111,12 +110,18 @@ BTC Relay由ConsenSys团队推出，其主要原理是BTC Relay把以太坊网�
 
 #### MPT (Merkle Patricia Tree)
 MPT是以太坊中的一种加密认证的数据结构，可以用来存储所有的(key，value)对。
-
 相比于传统的trie只有一种节点，以太坊增加了两个新的节点，称为叶节点和扩展节点；原来的节点称为分支节点。
 
-MPT树能有效减少Trie树的深度，增加Trie树的平衡性。而且通过节点的hash值进行树的节点的链接，有助于提高树的安全性和可验证性。
+MPT树能有效减少Trie树的深度，增加Trie树的平衡性。而且通过节点的hash值进行树的节点的链接，有助于提高树的安全性和可验证性。MPT树也导致了以太坊的Merkle Proof有别于比特币的。
 
+#### GHOST (Greedy Heaviest Observed Subtree protocol)
+“幽灵“协议（"Greedy Heaviest Observed Subtree" (GHOST) protocol）是由Yonatan Sompolinsky 和 Aviv Zohar在2013年12月引入的创新。幽灵协议提出的动机是当前快速确认的块链因为区块的高作废率而受到低安全性困扰； 
+GHOST通过在计算哪条链“最长”的时候把废区块也包含进来；这就是说，不仅一个区块的父区块和更早的祖先块，祖先块的作废的后代区块（以太坊中称之为“叔区块”）也被加进来以计算哪一个区块拥有支持其的最大工作量证明。
 
+以太坊付给以“叔区块”身份为新块确认作出贡献的废区块87.5%的奖励，把它们纳入计算的“侄子区块”将获得奖励的12.5%，不过，交易费用（手续费）不奖励给叔区块。
+具体可见白皮书[对应章节](https://github.com/ethereum/wiki/wiki/White-Paper#modified-ghost-implementation)
+
+这一块由于白皮书上描述不是很具体，所以我也不是很理解它这个机制。 待之后研究它源码的时候再回过头来补充内容
 
 关于上面提到的技术的细节，可见参考文献：
 - [RLP](https://github.com/ethereum/wiki/wiki/%5B%E4%B8%AD%E6%96%87%5D-RLP)
