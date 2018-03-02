@@ -37,9 +37,9 @@
 
 此外，由于侧链是从父链中转移现有资产而不是另铸新资产，侧链不会引起未经授权的铸币，维护资产的安全和稀缺性依靠父链来实现。从而可避免出现与新货币相关的流动性短缺和市场波动。
 
-侧链简介：[区块链中一个重要的链：侧链](https://steemit.com/cn/@monkeyplayfire/62v4en)
 
 参考资料:
+- [区块链中一个重要的链：侧链](https://steemit.com/cn/@monkeyplayfire/62v4en)
 - [根链平台(RootStock)——基于比特币驱动的智能合约白皮书(中文翻译)](http://www.8btc.com/tan90d84)
 
 ### 相关项目及技术
@@ -55,12 +55,13 @@ BlockStream公司由比特币核心开发团队成立。该公司提出侧链协
 
     [Pegged Sidechains 白皮书(翻译版)](http://www.8btc.com/enabling-blockchain-innovations-with-pegged-sidechains-abstract-introduction)
 
-    楔入式侧链的技术基础称作双向楔入，流程如下(具体可见白皮书第2、3节)：
+    楔入式侧链的技术基础称作双向楔入，流程大概如下(具体可见白皮书第2、3节)：
 
     ![双向楔入](https://steemitimages.com/0x0/http://upload-images.jianshu.io/upload_images/1698588-632a3bbe1874c5d0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 - ##### 闪电网络(Lightning Network)
     闪电网络是由BlockStream公司提出的一个支持高容量、及时交易的小额支付系统。闪电网络在链下实现点对点微支付，原先比特币处理能力的瓶颈被彻底打破，时延、最终性、容量甚至隐私问题也迎刃而解。它是基于微支付通道演进而来，创造性的设计出了两种类型的交易合约：序列到期可撤销合约RSMC（Revocable Sequence Maturity Contract，哈希时间锁定合约HTLC（Hashed Timelock Contract）。
+    
     详情可见：
     - [详解闪电网络](http://www.8btc.com/ln-rn-corda)
     - [The Bitcoin Lightning Network:Scalable Off-Chain Instant Payments](http://lightning.network/lightning-network-paper.pdf)
