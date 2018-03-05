@@ -164,6 +164,18 @@ GHOST通过在计算哪条链“最长”的时候把废区块也包含进来；
 ---
 
 
+## [EOS](https://eos.io/)
+关于EOS的先占坑，之后再来完善内容
+EOS和ETH的愿景大致相似，一个操作系统的底层。可以把它看成ETH的改进版。
+
+区块链应用最大的限制就是延迟和数据吞吐量，EOS通过并行链和DPOS的方式解决了延迟和数据吞吐量的难题，比如BTC是大概最少三十分钟后数据才能被确认，7TPS/S，ETH也需要几分钟，只有，但基于石墨烯底层的BTS和STEEM却可以达到1.5S的平均确认速度和有限条件下实测3300TPS的数据吞吐量，EOS通过并行链的方式，最高可以达到数百万TPS，并且并行本地链甚至可以达到毫秒级的确认速度。
+
+- [Github](https://github.com/eosio)
+- [白皮书 中文](http://www.jianshu.com/p/f65bf7691482)
+- [白皮书 英文](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md)
+
+---
+
 
 ## 瑞波 Ripple
 瑞波（Ripple）是世界上第一个开放的支付网络，通过这个支付网络可以转账任意一种货币，简便易行快捷，费用几乎是零。 瑞波强调的不是“货币属性”而是“支付属性”。XRP的发行总数是固定的，在开始就被设定为1000亿个，不会再发行。
@@ -200,6 +212,15 @@ Ripple主要和[SWIFT](https://zh.wikipedia.org/wiki/%E7%8E%AF%E7%90%83%E9%93%B6
 
 ## 去中心化存储
 
+### [IPFS](https://ipfs.io/)
+- [白皮书.中文](https://gguoss.github.io/2017/05/28/ipfs/)
+- [白皮书.英文](https://github.com/ipfs/papers/raw/master/ipfs-cap2pfs/ipfs-p2p-file-system.pdf)
+### [Filecoin](https://filecoin.io/)
+- [白皮书.中文](http://chainx.org/paper/index/index/id/13.html)
+- [白皮书.英文](https://filecoin.io/filecoin.pdf)
+### [BigChainDB](https://www.bigchaindb.com/)
+- [白皮书.中文](http://blog.csdn.net/fengqing79/article/details/70154076)
+- [白皮书.英文](https://www.bigchaindb.com/whitepaper/)
 
 ---
 
