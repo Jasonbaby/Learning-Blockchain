@@ -165,14 +165,20 @@ GHOST通过在计算哪条链“最长”的时候把废区块也包含进来；
 
 
 ## [EOS](https://eos.io/)
-关于EOS的先占坑，之后再来完善内容
+
 EOS和ETH的愿景大致相似，一个操作系统的底层。可以把它看成ETH的改进版。
 
 区块链应用最大的限制就是延迟和数据吞吐量，EOS通过并行链和DPOS的方式解决了延迟和数据吞吐量的难题，比如BTC是大概最少三十分钟后数据才能被确认，7TPS/S，ETH也需要几分钟，只有，但基于石墨烯底层的BTS和STEEM却可以达到1.5S的平均确认速度和有限条件下实测3300TPS的数据吞吐量，EOS通过并行链的方式，最高可以达到数百万TPS，并且并行本地链甚至可以达到毫秒级的确认速度。
 
+不过创始团队似乎不太靠谱
+
+关于EOS的先占坑，之后再来完善内容
+
 - [Github](https://github.com/eosio)
-- [白皮书 中文](http://www.jianshu.com/p/f65bf7691482)
+- [白皮书 中文](https://link.jianshu.com/?t=http%3A%2F%2Fbtsabc.org%2Fportal.php%3Fmod%3Dattachment%26id%3D2196)
 - [白皮书 英文](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md)
+
+### 技术特点
 
 ---
 
