@@ -6,7 +6,9 @@
 - 记录我在学习区块链项目过程中的体会和心得
 - 分享
 
-希望通过对区块链技术、项目的学习，帮助自己理解这个新事物，理解区块链的逻辑
+希望通过对区块链技术、项目的学习，帮助自己理解这个新事物，理解区块链的逻辑。
+
+需要说明的是，这个库主要用来帮助理解区块链的机制，没有涉及到区块链的编程。
 
 ## 资料
 ### 基础资料
@@ -38,18 +40,19 @@
 
 接下来的内容，是我在学习区块链过程中接触到的项目、概念和技术，主要会记录它们**独特**的地方。
 
-内容按照时间顺序罗列，所以看上去可能会有些混乱。不过不用担心，每当内容多到一定程度，我都会认真整理一次的，力求简洁明了。
 
 
 ---
 
 ## 目录
-
+技术向：
 - [跨链技术](https://github.com/Jasonbaby/Learning-Blockchain#%E8%B7%A8%E9%93%BE%E6%8A%80%E6%9C%AF%E4%BE%A7%E9%93%BE)
 - [零币协议(Zerocoin protocol)](https://github.com/Jasonbaby/Learning-Blockchain#%E9%9B%B6%E5%B8%81%E5%8D%8F%E8%AE%AEzerocoin-protocol)
 - [以太坊 Ethereum](https://github.com/Jasonbaby/Learning-Blockchain#%E4%BB%A5%E5%A4%AA%E5%9D%8A-ethereum)
 - [EOS](https://github.com/Jasonbaby/Learning-Blockchain#eos)
+应用向：
 - [瑞波 Ripple](https://github.com/Jasonbaby/Learning-Blockchain#%E7%91%9E%E6%B3%A2-ripple)
+- [比特股 BitShares](https://github.com/Jasonbaby/Learning-Blockchain#比特股-BitShares)
 - [去中心化储存](https://github.com/Jasonbaby/Learning-Blockchain#%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%98%E5%82%A8)
 
 
@@ -146,6 +149,7 @@ ZEC是基于比特币0.11.2版本代码基础上进行修改的分支，保留�
 - [Ethfans.org中文文档](http://ethfans.org/wikis/Home)
 - [维基百科](https://zh.wikipedia.org/wiki/%E4%BB%A5%E5%A4%AA%E5%9D%8A)
 - [深入浅出以太坊](http://www.gxn.io/files/book/shenruqianchuyitaifang.pdf)
+
 ### 技术特点
 #### *RLP*
 递归长度前缀编码（RLP）是Ethereum中对象序列化的一个主要编码方式，起到穿针引线的作用，其目的是对任意嵌套的二进制数据的序列进行编码，这种编码格式将任意长度和纬度的字符串构成的数组串连接拼成字符串。
@@ -178,25 +182,25 @@ Solidity是一种语法类似JavaScript的高级语言。它被设计成以编�
 
 有意思的是，以太坊进行过数次硬分叉，其中一次分叉还是为了让被黑客盗取的以太币回归原处。这显然跟区块链上的数据不可逆转不可篡改的特性违背了
 
+
+
 ---
 
 
 ## [EOS](https://eos.io/)
 
-EOS和ETH的愿景大致相似，一个操作系统的底层。可以把它看成ETH的改进版。
+EOS和ETH的愿景大致相似，一个操作系统的底层。相比于ETH，EOS为用户、开发者提供了更多的、更完善的底层功能和结构，有助于开发者在EOS方便快速地搭建他们的服务。
 
-区块链应用最大的限制就是延迟和数据吞吐量，EOS通过并行链和DPOS的方式解决了延迟和数据吞吐量的难题，比如BTC是大概最少三十分钟后数据才能被确认，7TPS/S，ETH也需要几分钟，只有，但基于石墨烯(一种与'石墨烯'材料同名的技术)底层的BTS和STEEM却可以达到1.5S的平均确认速度和有限条件下实测3300TPS的数据吞吐量，EOS通过并行链的方式，最高可以达到数百万TPS，并且并行本地链甚至可以达到毫秒级的确认速度。
+区块链应用最大的限制就是延迟和数据吞吐量，EOS通过并行链和DPOS的方式解决了延迟和数据吞吐量的难题，EOS通过并行链的方式，最高可以达到数百万TPS的数据吞吐量，并且并行本地链甚至可以达到毫秒级的确认速度。
 
 - [Github](https://github.com/eosio)
 - [白皮书 中文](https://link.jianshu.com/?t=http%3A%2F%2Fbtsabc.org%2Fportal.php%3Fmod%3Dattachment%26id%3D2196)
 - [白皮书 英文](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md)
-
-### *石墨烯区块链库(graphene blockchain library)*
-石墨烯是区块链工具组，由比特股团队cryptonomex开发，采用C++编写，丹尼尔•拉里默（Dan Larimer）是 Cryptonomex 的创始人。
-
-[Github](https://github.com/cryptonomex/graphene)
+- [解读《EOS.IO技术白皮书》](https://www.jianshu.com/p/bc489db794ce)
+- [EOS：史诗级的区块链操作系统](https://www.jianshu.com/p/f65bf7691482)
 
 
+### *并行链*
 
 
 
@@ -234,6 +238,23 @@ Ripple主要和[SWIFT](https://zh.wikipedia.org/wiki/%E7%8E%AF%E7%90%83%E9%93%B6
 [瑞波币与瑞波系统的运行机制](http://www.fx361.com/page/2016/1205/376236.shtml)
 
 ---
+
+
+## [比特股 BitShares](https://bitshares.org/)
+点对点的多态数字资产交易系统
+
+### 技术特点
+#### *石墨烯区块链库(graphene blockchain library)*
+石墨烯是区块链工具组，由比特股团队cryptonomex开发，采用C++编写。 比特股(BitShare) 2.0版本基于石墨烯技术开发，性能得到了极大提升。
+
+[Github](https://github.com/cryptonomex/graphene)
+
+╮(╯▽╰)╭ 相关资料好少，不懂不懂。[官方文档的介绍都好少](http://docs.bitshares.org/index.html)
+
+
+
+---
+
 
 
 ## 去中心化存储
