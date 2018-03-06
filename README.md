@@ -40,6 +40,19 @@
 
 内容按照时间顺序罗列，所以看上去可能会有些混乱。不过不用担心，每当内容多到一定程度，我都会认真整理一次的，力求简洁明了。
 
+
+---
+
+## 目录
+
+- [跨链技术](https://github.com/Jasonbaby/Learning-Blockchain#%E8%B7%A8%E9%93%BE%E6%8A%80%E6%9C%AF%E4%BE%A7%E9%93%BE)
+- [零币协议(Zerocoin protocol)](https://github.com/Jasonbaby/Learning-Blockchain#%E9%9B%B6%E5%B8%81%E5%8D%8F%E8%AE%AEzerocoin-protocol)
+- [以太坊 Ethereum](https://github.com/Jasonbaby/Learning-Blockchain#%E4%BB%A5%E5%A4%AA%E5%9D%8A-ethereum)
+- [EOS](https://github.com/Jasonbaby/Learning-Blockchain#eos)
+- [瑞波 Ripple](https://github.com/Jasonbaby/Learning-Blockchain#%E7%91%9E%E6%B3%A2-ripple)
+- [去中心化储存](https://github.com/Jasonbaby/Learning-Blockchain#%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%98%E5%82%A8)
+
+
 ---
 
 ## 跨链技术(侧链)
@@ -124,12 +137,12 @@ ZEC是基于比特币0.11.2版本代码基础上进行修改的分支，保留�
 
 
 
-## 以太坊 Ethereum
+## [以太坊 Ethereum](https://ethereum.org/)
 以太坊是一个开源的有智能合约功能的公共区块链平台，它允许任何人在平台中建立和使用通过区块链技术运行的去中心化应用。
 以太坊狭义上是指一系列定义去中心化应用平台的协议，它的核心是以太坊虚拟机（“EVM”），可以执行任意复杂算法的编码。
 
 关于以太坊平台的详细介绍，可见参考文献：
-- [项目源码 github](https://github.com/ethereum/go-ethereum)
+- [项目源码 github](https://github.com/ethereum/)
 - [Ethfans.org中文文档](http://ethfans.org/wikis/Home)
 - [维基百科](https://zh.wikipedia.org/wiki/%E4%BB%A5%E5%A4%AA%E5%9D%8A)
 - [深入浅出以太坊](http://www.gxn.io/files/book/shenruqianchuyitaifang.pdf)
@@ -153,6 +166,10 @@ GHOST通过在计算哪条链“最长”的时候把废区块也包含进来；
 
 这一块由于白皮书上描述不是很具体，所以我也不是很理解它这个机制。 待之后研究它源码的时候再回过头来补充内容。主要困惑的地方在于，既然叔块是有价值的，那么当矿工挖到一个区块的时候，是否可以复制这个区块到多台电脑上，使其他电脑的区块变为叔块，这样一来，获得的奖励不是很增加很多吗？
 
+#### *Solidity*
+Solidity是一种语法类似JavaScript的高级语言。它被设计成以编译的方式生成以太坊虚拟机代码。
+[Github](https://github.com/ethereum/solidity)
+
 关于上面提到的技术的细节，可见参考文献：
 - [RLP](https://github.com/ethereum/wiki/wiki/%5B%E4%B8%AD%E6%96%87%5D-RLP)
 - [Merkle Patricia Tree 维基百科](https://github.com/ethereum/wiki/wiki/Patricia-Tree)
@@ -168,17 +185,20 @@ GHOST通过在计算哪条链“最长”的时候把废区块也包含进来；
 
 EOS和ETH的愿景大致相似，一个操作系统的底层。可以把它看成ETH的改进版。
 
-区块链应用最大的限制就是延迟和数据吞吐量，EOS通过并行链和DPOS的方式解决了延迟和数据吞吐量的难题，比如BTC是大概最少三十分钟后数据才能被确认，7TPS/S，ETH也需要几分钟，只有，但基于石墨烯底层的BTS和STEEM却可以达到1.5S的平均确认速度和有限条件下实测3300TPS的数据吞吐量，EOS通过并行链的方式，最高可以达到数百万TPS，并且并行本地链甚至可以达到毫秒级的确认速度。
-
-不过创始团队似乎不太靠谱
-
-关于EOS的先占坑，之后再来完善内容
+区块链应用最大的限制就是延迟和数据吞吐量，EOS通过并行链和DPOS的方式解决了延迟和数据吞吐量的难题，比如BTC是大概最少三十分钟后数据才能被确认，7TPS/S，ETH也需要几分钟，只有，但基于石墨烯(一种与'石墨烯'材料同名的技术)底层的BTS和STEEM却可以达到1.5S的平均确认速度和有限条件下实测3300TPS的数据吞吐量，EOS通过并行链的方式，最高可以达到数百万TPS，并且并行本地链甚至可以达到毫秒级的确认速度。
 
 - [Github](https://github.com/eosio)
 - [白皮书 中文](https://link.jianshu.com/?t=http%3A%2F%2Fbtsabc.org%2Fportal.php%3Fmod%3Dattachment%26id%3D2196)
 - [白皮书 英文](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md)
 
-### 技术特点
+### *石墨烯区块链库(graphene blockchain library)*
+石墨烯是区块链工具组，由比特股团队cryptonomex开发，采用C++编写，丹尼尔•拉里默（Dan Larimer）是 Cryptonomex 的创始人。
+
+[Github](https://github.com/cryptonomex/graphene)
+
+
+
+
 
 ---
 
