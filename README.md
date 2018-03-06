@@ -50,6 +50,7 @@
 - [零币协议(Zerocoin protocol)](https://github.com/Jasonbaby/Learning-Blockchain#%E9%9B%B6%E5%B8%81%E5%8D%8F%E8%AE%AEzerocoin-protocol)
 - [以太坊 Ethereum](https://github.com/Jasonbaby/Learning-Blockchain#%E4%BB%A5%E5%A4%AA%E5%9D%8A-ethereum)
 - [EOS](https://github.com/Jasonbaby/Learning-Blockchain#eos)
+
 应用向：
 - [瑞波 Ripple](https://github.com/Jasonbaby/Learning-Blockchain#%E7%91%9E%E6%B3%A2-ripple)
 - [比特股 BitShares](https://github.com/Jasonbaby/Learning-Blockchain#比特股-BitShares)
@@ -201,7 +202,7 @@ EOS和ETH的愿景大致相似，一个操作系统的底层。相比于ETH，EO
 
 
 ### *并行链*
-
+先占坑
 
 
 ---
@@ -249,7 +250,7 @@ Ripple主要和[SWIFT](https://zh.wikipedia.org/wiki/%E7%8E%AF%E7%90%83%E9%93%B6
 
 [Github](https://github.com/cryptonomex/graphene)
 
-╮(╯▽╰)╭ 相关资料好少，不懂不懂。[官方文档的介绍都好少](http://docs.bitshares.org/index.html)
+╮(╯▽╰)╭ 相关资料好少，不懂不懂。[官方文档](http://docs.bitshares.org/index.html)的介绍都好少
 
 
 
