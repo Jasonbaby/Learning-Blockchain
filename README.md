@@ -250,7 +250,7 @@ Ripple主要和[SWIFT](https://zh.wikipedia.org/wiki/%E7%8E%AF%E7%90%83%E9%93%B6
 
 [Github](https://github.com/cryptonomex/graphene)
 
-╮(╯▽╰)╭ 相关资料好少，不懂不懂。[官方文档](http://docs.bitshares.org/index.html)的介绍都好少
+╮(╯▽╰)╭ 相关资料好少，不懂不懂。[官方文档](http://docs.bitshares.org/index.html)的介绍都好少。真难。。。
 
 
 
